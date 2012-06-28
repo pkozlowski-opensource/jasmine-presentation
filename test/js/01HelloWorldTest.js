@@ -1,6 +1,6 @@
 describe("Hello World scenario", function () {
 
-    var hello = new HelloWorld();
+    var hello;
 
     beforeEach(function () {
         hello = new HelloWorld();
@@ -13,6 +13,6 @@ describe("Hello World scenario", function () {
     it("should throw exception for an invalid name", function () {
         expect(function () {
             hello.sayHello(undefined)
-        }).toThrow();
+        }).toThrow("Invalid name!");
     });
 });
